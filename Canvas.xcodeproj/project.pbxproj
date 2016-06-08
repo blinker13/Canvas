@@ -40,6 +40,7 @@
 		BDD432211D08C4320011F255 /* SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD432171D08C4320011F255 /* SpaceTests.swift */; };
 		BDD432221D08C4320011F255 /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD432181D08C4320011F255 /* TransformTests.swift */; };
 		BDD432231D08C4320011F255 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD432191D08C4320011F255 /* UnitTests.swift */; };
+		BDD432271D08C8960011F255 /* Blending.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD432261D08C8960011F255 /* Blending.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		BDD432171D08C4320011F255 /* SpaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceTests.swift; sourceTree = "<group>"; };
 		BDD432181D08C4320011F255 /* TransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformTests.swift; sourceTree = "<group>"; };
 		BDD432191D08C4320011F255 /* UnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		BDD432261D08C8960011F255 /* Blending.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blending.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		BDD4320D1D08C3540011F255 /* Drawing */ = {
 			isa = PBXGroup;
 			children = (
+				BDD432261D08C8960011F255 /* Blending.swift */,
 				BDD431D81D08C1090011F255 /* Border.swift */,
 				BDD431E11D08C1090011F255 /* Image.swift */,
 				BDD431E61D08C1090011F255 /* Shadow.swift */,
@@ -351,6 +354,7 @@
 				BDD432211D08C4320011F255 /* SpaceTests.swift in Sources */,
 				BDD432231D08C4320011F255 /* UnitTests.swift in Sources */,
 				BDD432221D08C4320011F255 /* TransformTests.swift in Sources */,
+				BDD432271D08C8960011F255 /* Blending.swift in Sources */,
 				BDD432201D08C4320011F255 /* ShadowTests.swift in Sources */,
 				BDD4321E1D08C4320011F255 /* PointTests.swift in Sources */,
 				BDD4321A1D08C4320011F255 /* BorderTests.swift in Sources */,
