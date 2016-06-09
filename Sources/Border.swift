@@ -5,7 +5,7 @@ public struct Border : Equatable {
 	public let radius:Unit
 	public let width:Unit
 
-	public init(color:Color = Color.black, radius:Unit = 0, width:Unit = 0) {
+	public init(color:Color = .black, radius:Unit = 0, width:Unit = 0) {
 		(self.color, self.radius, self.width) = (color, radius, width)
 	}
 }
