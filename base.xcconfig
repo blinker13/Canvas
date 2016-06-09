@@ -1,17 +1,20 @@
 
-SUPPORTED_PLATFORMS                     = iphoneos iphonesimulator macosx
+SUPPORTED_PLATFORMS						= iphoneos iphonesimulator macosx
 
-VALID_ARCHS[sdk=iphone*]                = arm64 armv7 armv7s
-VALID_ARCHS[sdk=macosx*]                = i386 x86_64
+VALID_ARCHS[sdk=iphone*]				= arm64 armv7 armv7s
+VALID_ARCHS[sdk=macosx*]				= i386 x86_64
 
-LD_RUNPATH_SEARCH_PATHS[sdk=iphone*]    = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
-LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]    = $(inherited) @executable_path/../Frameworks @loader_path/Frameworks @loader_path/../Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=iphone*]	= $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]	= $(inherited) @executable_path/../Frameworks @loader_path/Frameworks @loader_path/../Frameworks
 
-CODE_SIGN_IDENTITY[sdk=iphoneos*]       = iPhone Developer
+CODE_SIGN_IDENTITY[sdk=iphoneos*]		= iPhone Developer
 
-IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*] = 9.0
-TARGETED_DEVICE_FAMILY[sdk=iphone*]     = 1,2
+IPHONEOS_DEPLOYMENT_TARGET[sdk=iphone*]	= 9.0
 
-COMBINE_HIDPI_IMAGES[sdk=macosx*]       = YES
+TARGETED_DEVICE_FAMILY[sdk=iphone*]		= 1,2
+TARGETED_DEVICE_FAMILY[sdk=appletv*]	= 3
+TARGETED_DEVICE_FAMILY[sdk=watch*]		= 4
 
+ONLY_ACTIVE_ARCH[config=Debug]			= YES
 
+COMBINE_HIDPI_IMAGES[sdk=macosx*]		= YES

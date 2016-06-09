@@ -1,6 +1,6 @@
 
 public protocol Transformable {
-    func transformed(transform:Transform) -> Self
+	func transformed(transform:Transform) -> Self
 }
 
 // MARK: -

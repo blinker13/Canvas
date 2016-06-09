@@ -1,13 +1,13 @@
 
 public struct Path : Equatable, Shape {
 
-    public enum Element {
+	public enum Element {
 		case MoveTo(Point)
 		case LineTo(Point)
 		case CubicCurveTo(Point, Point, Point)
 		case QuadCurveTo(Point, Point)
 		case Close
-    }
+	}
 
 	public let elements:[Element]
 }

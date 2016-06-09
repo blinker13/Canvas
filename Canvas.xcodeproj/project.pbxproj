@@ -122,6 +122,7 @@
 				BDD431CE1D08C0900011F255 /* Tests */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		BDD431B41D08BF1D0011F255 /* Products */ = {
 			isa = PBXGroup;
