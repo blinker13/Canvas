@@ -61,7 +61,7 @@
 		BDD431BE1D08BFAA0011F255 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		BDD431BF1D08BFAA0011F255 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BDD431C11D08BFAA0011F255 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDD431CD1D08C0900011F255 /* Test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD431CD1D08C0900011F255 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD431D11D08C0900011F255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD431D81D08C1090011F255 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
 		BDD431D91D08C1090011F255 /* Canvas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				BDD431B31D08BF1D0011F255 /* Canvas.framework */,
-				BDD431CD1D08C0900011F255 /* Test.xctest */,
+				BDD431CD1D08C0900011F255 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 			productReference = BDD431B31D08BF1D0011F255 /* Canvas.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BDD431CC1D08C0900011F255 /* Test */ = {
+		BDD431CC1D08C0900011F255 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDD431D51D08C0900011F255 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = BDD431D51D08C0900011F255 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				BDD431C91D08C0900011F255 /* Sources */,
 				BDD431CA1D08C0900011F255 /* Frameworks */,
@@ -276,9 +276,9 @@
 			dependencies = (
 				BDD431D41D08C0900011F255 /* PBXTargetDependency */,
 			);
-			name = Test;
+			name = Tests;
 			productName = Tests;
-			productReference = BDD431CD1D08C0900011F255 /* Test.xctest */;
+			productReference = BDD431CD1D08C0900011F255 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -312,7 +312,7 @@
 			projectRoot = "";
 			targets = (
 				BDD431B21D08BF1D0011F255 /* Canvas */,
-				BDD431CC1D08C0900011F255 /* Test */,
+				BDD431CC1D08C0900011F255 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -539,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDD431D51D08C0900011F255 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		BDD431D51D08C0900011F255 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDD431D61D08C0900011F255 /* Debug */,
