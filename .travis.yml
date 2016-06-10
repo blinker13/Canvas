@@ -1,9 +1,11 @@
 
 language: objective-c
+
 osx_image: xcode7.3
 
-script:
-  - xctool test -project Canvas.xcodeproj -scheme 'Canvas' -configuration Debug
+xcode_project: Canvas.xcodeproj
+xcode_scheme: Canvas
+xcode_sdk: macosx10.11
 
 notifications:
   email: false
