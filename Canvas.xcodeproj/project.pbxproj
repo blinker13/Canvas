@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD7296811D0B69FE005BA587 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7296801D0B69FE005BA587 /* Package.swift */; };
 		BDD431D21D08C0900011F255 /* Canvas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD431B31D08BF1D0011F255 /* Canvas.framework */; };
 		BDD431EE1D08C1090011F255 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD431D81D08C1090011F255 /* Border.swift */; };
 		BDD431EF1D08C1090011F255 /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD431D91D08C1090011F255 /* Canvas.swift */; };
@@ -54,12 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD72967F1D0B69FE005BA587 /* Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		BD7296801D0B69FE005BA587 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		BDD431B31D08BF1D0011F255 /* Canvas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Canvas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD431BE1D08BFAA0011F255 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		BDD431BF1D08BFAA0011F255 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BDD431C11D08BFAA0011F255 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDD431C21D08BFAA0011F255 /* package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = package.swift; sourceTree = "<group>"; };
-		BDD431C31D08BFAA0011F255 /* base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = base.xcconfig; sourceTree = "<group>"; };
 		BDD431CD1D08C0900011F255 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD431D11D08C0900011F255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDD431D81D08C1090011F255 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
@@ -115,8 +116,8 @@
 				BDD431BE1D08BFAA0011F255 /* LICENSE.md */,
 				BDD431BF1D08BFAA0011F255 /* README.md */,
 				BDD431C11D08BFAA0011F255 /* Info.plist */,
-				BDD431C21D08BFAA0011F255 /* package.swift */,
-				BDD431C31D08BFAA0011F255 /* base.xcconfig */,
+				BD7296801D0B69FE005BA587 /* Package.swift */,
+				BD72967F1D0B69FE005BA587 /* Base.xcconfig */,
 				BDD431B41D08BF1D0011F255 /* Products */,
 				BDD431C01D08BFAA0011F255 /* Sources */,
 				BDD431CE1D08C0900011F255 /* Tests */,
@@ -328,6 +329,7 @@
 				BDD431F31D08C1090011F255 /* Edges.swift in Sources */,
 				BDD431FE1D08C1090011F255 /* Size.swift in Sources */,
 				BDD431FA1D08C1090011F255 /* Point.swift in Sources */,
+				BD7296811D0B69FE005BA587 /* Package.swift in Sources */,
 				BDD432001D08C1090011F255 /* Text.swift in Sources */,
 				BDD431F01D08C1090011F255 /* Color.Component.swift in Sources */,
 				BDD431F51D08C1090011F255 /* Geometry.swift in Sources */,
@@ -377,7 +379,7 @@
 /* Begin XCBuildConfiguration section */
 		BDD431B91D08BF1D0011F255 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDD431C31D08BFAA0011F255 /* base.xcconfig */;
+			baseConfigurationReference = BD72967F1D0B69FE005BA587 /* Base.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -422,7 +424,7 @@
 		};
 		BDD431BA1D08BF1D0011F255 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BDD431C31D08BFAA0011F255 /* base.xcconfig */;
+			baseConfigurationReference = BD72967F1D0B69FE005BA587 /* Base.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
