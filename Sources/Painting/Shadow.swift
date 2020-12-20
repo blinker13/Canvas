@@ -7,6 +7,8 @@ public struct Shadow : Equatable, Paint {
 	public let radius: Double
 }
 
+// MARK: -
+
 public extension Shadow {
 
 	@inlinable var isVisible: Bool { color.isVisible }

@@ -4,14 +4,18 @@ import Geometry
 public struct Color : Hashable, Paint {
 
 	public enum Components : Hashable {
-		case rgb(Double, Double, Double)
-		case monochrome(Double)
+		case rgb(Scalar, Scalar, Scalar)
+		// TODO: case hsl(Scalar, Scalar, Scalar)
+		// TODO: case hsv(Scalar, Scalar, Scalar)
+		case monochrome(Scalar)
 		case clear
 	}
 
 	public let components: Components
-	public let opacity: Double
+	public let opacity: Scalar
 }
+
+// MARK: -
 
 public extension Color {
 
@@ -36,17 +40,17 @@ public extension Color {
 	@inlinable var inverted: Self { .init(components.inverted, opacity: opacity) }
 	@inlinable var isVisible: Bool { opacity > .zero }
 
-	@inlinable init(_ components: Components, opacity: Double = 1.0) {
+	@inlinable init(_ components: Components, opacity: Scalar = 1.0) {
 		self.components = components
 		self.opacity = opacity
 	}
 
-	@inlinable init(white: Double, opacity: Double = 1.0) {
+	@inlinable init(white: Scalar, opacity: Scalar = 1.0) {
 		self.components = .monochrome(white)
 		self.opacity = opacity
 	}
 
-	@inlinable init(red: Double, green: Double, blue: Double, opacity: Double = 1.0) {
+	@inlinable init(red: Scalar, green: Scalar, blue: Scalar, opacity: Scalar = 1.0) {
 		self.components = .rgb(red, green, blue)
 		self.opacity = opacity
 	}
@@ -54,6 +58,8 @@ public extension Color {
 	// TODO: complementary color
 	// TODO: grayscale
 }
+
+// MARK: -
 
 public extension Color.Components {
 

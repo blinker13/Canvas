@@ -81,6 +81,8 @@ public struct Text {
 	}
 }
 
+// MARK: -
+
 public extension Text {
 
 	subscript (location: Int) -> (Attributes, Range)? {
@@ -92,6 +94,8 @@ public extension Text {
 		return self[location]?.attributes ?? Attributes()
 	}
 }
+
+// MARK: -
 
 internal extension Text {
 	subscript (location: Int) -> Run? {
