@@ -37,7 +37,7 @@ class Colors : XCTestCase {
 
 	func test_clear() {
 		let subject: Color = .clear
-		XCTAssert(subject.components == .clear)
+		XCTAssert(subject.components == .none)
 		XCTAssert(subject.opacity == .zero)
 	}
 
