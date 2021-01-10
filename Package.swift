@@ -9,7 +9,7 @@ _ = Package(
 	],
 
 	dependencies:[
-		.package(url: "https://github.com/blinker13/Geometry.git", from: "0.0.0")
+		.package(url: "https://github.com/blinker13/Geometry.git", from: "0.0.5")
 	],
 
 	targets: [
