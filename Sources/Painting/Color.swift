@@ -1,7 +1,7 @@
 
 import Geometry
 
-public struct Color : Hashable, Paint {
+public struct Color : Hashable {
 
 	public enum Components : Hashable {
 		case rgb(Scalar, Scalar, Scalar)
@@ -42,8 +42,6 @@ public extension Color {
 	@inlinable static var orange: Self	{ .init(named: #function) }
 	@inlinable static var purple: Self	{ .init(named: #function) }
 	@inlinable static var brown: Self	{ .init(named: #function) }
-
-	@inlinable var isVisible: Bool { opacity > .zero }
 
 	@inlinable init(red: Scalar, green: Scalar, blue: Scalar, opacity: Scalar = 1.0) {
 		self.init(components: .rgb(red, green, blue), opacity: opacity)
